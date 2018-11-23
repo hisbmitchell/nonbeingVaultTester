@@ -1,0 +1,125 @@
+  <meta name="viewport" width="device-width" />
+        
+        body, html {
+        
+            width: 100%; 
+            height: 100%; 
+            
+        }
+        
+        body {
+        padding: 0; 
+        width: 100%; 
+        height: 100%; 
+/*        padding-bottom: 10%; */
+        margin: 0; 
+        background-color: #e50000; 
+        }
+        canvas {
+        vertical-align: top;
+        } 
+        
+    
+        @font-face {
+font-family: Impact;
+src: url(/impact.ttf);
+}
+    a:link {
+    color: blue;
+    background-color: transparent; 
+    text-decoration: none;
+}
+        
+        a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+        
+        a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+      
+      .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom: 0;
+      } 
+        
+        .container {
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 2%;
+  
+    
+        }
+        
+          
+        .continue {
+            
+    font-family: "Courier New", Courier, monospace;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -40px;
+/*   margin-bottom: 40px;*/
+    font-size: 205%;
+    color: white;
+    
+        }
+        
+        .info{
+    text-align: center;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Courier New", Courier, monospace;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 5px solid black;
+    margin-top: 0;
+    font-size: 120%;
+    margin-bottom: 5%;
+     
+            
+}
+      
+      .gifImage {
+        
+        position: absolute;
+        height: 0;
+        width: 0;
+        }
+        
+        .firstImage {
+        
+            position: absolute;
+            height: 0;
+            width: 0;
+            left: 5% ;
+            top: 25%;
+            
+        }
+        
+         .secondImage {
+        
+            position: absolute;
+            height: 0;
+            width: 0;
+            left: 10%;
+            top: 120%;
+            
+        }
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+      

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>VAULT 4</title>
+    <link rel="stylesheet" href="styles.css">
+  
+   <script src="jquery-3.3.1.min.js"></script>
+      
+   <link rel="stylesheet" type="text/css" href="/styles/fonts/fonts.css" />
+   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    
+   
+
+  </head>
+  <body>
+      
+      <script>
+          
+    var gifImageGo = document.getElementsByTagName("isGifImage");
+     var fourthImg = "infobox1.jpg";
+    var fourthWidth = "492px";
+    var fourthHeight = "613px";
+    var fourthImgTwo = "infoBox2.jpg";
+    var fourthImgTwoTop = "25%";
+    var gif_file = "meltingRed3.gif";
+    var firstImg = "infoBox3.jpg";
+    var secondImg = "newimages/flesh.gif";
+    var thirdImg = "newimages/goo.gif";
+        
+    var lastWidth = "460px" ;
+    var lastHeight = "400px";
+    
+   
+          
+           var fifthImg = "newimages/head.gif";
+           var sixthImg = "newimages/dancing.gif";
+           var seventhImg = "newimages/bondage.gif";
+           var eigthimg = "newimages/faces.gif";
+           var ninethimg = "newimages/bugs.gif";
+          var tenthimg = "newimages/boxMove.gif";
+	  var eleventhimg = "newimages/faceMelt.gif";
+          
+          var introHeight = "115%";
+          
+          
+    var gifHeight = "115%";
+    var secondHeight = "90%";
+    var thirdHeight = "80%";
+    var facesHeight = "70%";
+    var numOfClicks = clicksNum();
+    
+    var dungeonVid = document.getElementById("mainVideo");
+    var introImg = document.getElementById("introImgID");
+          
+            function clicksNum() {
+                if (screen.width < 900){
+                  
+                  return -1;
+                  
+              }else{
+                 
+                  return 0;
+              }
+            }
+          
+          
+        function playVid() { 
+            dungeonVid.play();
+//            introImg.style.width = "0px";
+//            introImg.style.height = "0px";
+            
+
+            } 
+
+         
+
+          
+
+     // introImg.addEventListener("click", playVid); 
+    
+      window.ontouchend = myFunction;
+      window.onclick = myFunction;
+          
+   
+//     document.getElementById("clickHere").onclick=myFunction;
+          
+          // If the user clicks in the window, set the background color of <body> to yellow
+          function myFunction() {
+//            document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+              
+              if (screen.width < 1000){
+                  gifHeight = "120%";
+                  secondHeight = "80%";
+                  thirdHeight = "80%";
+                  //fourthImg = "safeMobile.jpg"
+                  fourthWidth = "700px";
+                  facesHeight = "50%";
+                  fourthHeight = "905px";
+                  fourthImgTwoTop = "25%";
+                
+                lastWidth = "700px";
+                lastHeight = "650px";
+                  
+                  
+                  
+              }else {
+                  gifHeight = "270%";
+                  secondHeight = "160%";
+                  thirdHeight = "145%";
+                  facesHeight = "120%";
+                  fourthImgTwoTop = "130%";
+                  introHeight = "130%";
+		      
+		
+                 
+              }
+              if (numOfClicks == 0){
+                document.getElementById("mainVideo").play(); 
+                
+                document.getElementById("introImgID").style.width="0px";
+                document.getElementById("introImgID").style.height="0px" ;
+                document.getElementById("introText").style.width="0px";
+                document.getElementById("introText").style.width="0px";
+		      
+		document.getElementById("introImgID").style.position="relative";
+		document.getElementById("introText").style.position="relative";
+        document.getElementById("introText").style.zIndex="-1";
+              }
+		  if (numOfClicks == 1){
+		  if (mainVideo.paused) {
+				mainVideo.play();
+			    }
+		document.getElementById("introImgID").style.position="relative";
+		document.getElementById("introText").style.position="relative";
+		  }
+		  
+                 if (numOfClicks == 4){
+			 
+			 
+			    
+			
+				
+                     
+                     
+                  document.getElementById("fourth").style.width=fourthWidth ;
+                    document.getElementById("fourth").style.height=fourthHeight ;
+                     document.getElementById("fourth").style.left="5%" ;
+                  document.getElementById("fourth").style.top=fourthImgTwoTop;
+                  document.getElementById("fourth").src =fourthImg;
+                 
+              }
+              
+               if (numOfClicks == 6){
+                  document.getElementById("fourthTwo").style.width=fourthWidth ;
+                    document.getElementById("fourthTwo").style.height=fourthHeight ;
+                     document.getElementById("fourthTwo").style.left="25%" ;
+                  document.getElementById("fourthTwo").style.top="30%" ;
+                  document.getElementById("fourthTwo").src =fourthImgTwo;
+                 
+              }
+              
+              if (numOfClicks == 8){
+                  document.getElementById("first").style.width=lastWidth;
+                  document.getElementById("first").style.height=lastHeight;
+                  document.getElementById("first").src =firstImg;
+                 
+                  document.getElementById("first").style.left="10%" ;
+                  document.getElementById("first").style.top="20%" ;
+                  
+                  
+                  
+              }
+              if (numOfClicks == 10){
+                  document.getElementById("second").style.height="225px" ;
+                    document.getElementById("second").style.width="250px" ;
+                  document.getElementById("second").style.left="30%" ;
+                  document.getElementById("second").style.top=secondHeight ;
+                  document.getElementById("second").src =secondImg;
+                 
+              }
+              
+                if (numOfClicks == 12){
+                  document.getElementById("third").style.width="400px" ;
+                    document.getElementById("third").style.height="270px" ;
+                     document.getElementById("third").style.left="55%" ;
+                  document.getElementById("third").style.top="45%" ;
+                  document.getElementById("third").src =thirdImg;
+                 
+              }
+              
+                
+              
+                  if (numOfClicks == 14){
+                    
+                    document.getElementById("seventh").style.width="320px" ;
+                    document.getElementById("seventh").style.height="470px" ;
+                     document.getElementById("seventh").style.left="40%" ;
+                  document.getElementById("seventh").style.top="35%" ;
+                  document.getElementById("seventh").src =seventhImg;
+                 
+                  }
+                      
+                          if (numOfClicks == 16){
+                  document.getElementById("sixth").style.width="400px" ;
+                    document.getElementById("sixth").style.height="320px" ;
+                     document.getElementById("sixth").style.left="55%" ;
+                  document.getElementById("sixth").style.top=thirdHeight ;
+                  document.getElementById("sixth").src =sixthImg;
+                 
+              }
+                      if (numOfClicks == 18){
+                   document.getElementById("fifth").style.width="325px" ;
+                    document.getElementById("fifth").style.height="460px" ;
+                     document.getElementById("fifth").style.left="10%" ;
+                  document.getElementById("fifth").style.top=facesHeight ;
+                  document.getElementById("fifth").src =fifthImg;
+                 
+              }
+            
+                       if (numOfClicks == 20){
+                  document.getElementById("eigth").style.height="350px"
+                    document.getElementById("eigth").style.width="325px" ;
+                  document.getElementById("eigth").style.left="60%" ;
+                  document.getElementById("eigth").style.top="25%" ;
+                  document.getElementById("eigth").src =eigthimg;
+                  
+                   
+              } 
+               
+              if (numOfClicks == 22){
+                  document.getElementById("nineth").style.height="263px";
+                    document.getElementById("nineth").style.width="400px" ;
+                  document.getElementById("nineth").style.left="10%" ;
+                  document.getElementById("nineth").style.top="15%" ;
+                  document.getElementById("nineth").src =ninethimg;
+                  
+                   
+              } 
+              
+              
+              if (numOfClicks == 24){
+                  document.getElementById("tenth").style.height="333px";
+                    document.getElementById("tenth").style.width="336px";
+		      document.getElementById("tenth").style.left="5%";
+                  document.getElementById("tenth").style.top="45%";
+                  document.getElementById("tenth").src =tenthimg;
+          
+                  
+                   
+              } 
+		  
+		    if (numOfClicks == 26){
+                  document.getElementById("eleventh").style.height="519px";
+                    document.getElementById("eleventh").style.width="200px";
+		      document.getElementById("eleventh").style.left="60%";
+                  document.getElementById("eleventh").style.top="5%";
+                  document.getElementById("eleventh").src =eleventhimg;
+                  
+                   
+              }
+		  
+		    if (numOfClicks == 28){
+                  document.getElementById("isGifImage").style.height=gifHeight ;
+                    document.getElementById("isGifImage").style.width="100%" ;
+                  document.getElementById("isGifImage").src =gif_file;
+                  
+                   
+              }
+              numOfClicks += 1;
+                clicksCount +=1;
+//              
+            
+            
+          gifImageGo.src = gif_file;
+}
+          
+           
+
+      
+
+          
+      </script>
+      
+      <div style="position: absolute; top: 50%; margin-left: auto; margin-right: auto; z-index:100; width: 800px; left: 0; 
+  right: 0; ">
+        <img id="introText" src="introText4.png" alt="" style="" >
+      </div>
+      
+      <div style="position: absolute; left: 0; top: 0; height: 115%; width: 100%;">
+		 <img id="introImgID" src="blackIntro.jpg" alt="intro img" style="height: 115%; width: 100%;" >
+	</div>
+      
+   
+      
+      <img id="fourth" src="meltingRed.png" class="firstImage" alt="safe space">
+      <img id="fourthTwo" src="meltingRed.png" class="firstImage" alt="safe space">
+      <img id="first" src="meltingRed.png" class="firstImage" alt="skull"> 
+      <img id="second" src="meltingRed.png" class="firstImage" alt="morph"> 
+      <img id="third" src="meltingRed.png" class="firstImage" alt="vortex">
+    
+      <img id="fifth" src="meltingRed.png" class="firstImage" alt="safe space">
+      <img id="sixth" src="meltingRed.png" class="firstImage" alt="BUGS">
+      <img id="seventh" src="meltingRed.png" class="firstImage" alt="bdsm">
+    
+    <img id="eigth" src="meltingRed.png" class="firstImage" alt="bdsm">
+    <img id="nineth" src="meltingRed.png" class="firstImage" alt="bdsm">
+	  
+	   <img id="tenth" src="meltingRed.png" class="firstImage" alt="new1">
+	   <img id="eleventh" src="meltingRed.png" class="firstImage" alt="new2">
+      
+      
+      <img id="isGifImage" src="meltingRed.png" class="gifImage" alt="Melting"> 
+      
+      
+<!--
+      
+<img id="image0" src="http://80.15.77.137:8080/cgi-bin/faststream.jpg?stream=half&amp;fps=15&amp;rand=COUNTER"  width="640" max-width="640" height="480" class="center"alt="" title="Click here to enter the camera located in France, region Bourgogne, Cluny">
+-->
+      
+<!--      <img id="image0" src="vault3.gif" width="640" max-width="640" height="480" class="center" alt="loading live video feed..." title="Live from ">-->
+    
+      <video id=mainVideo loop playsinline width="640" height="480" class="center">
+  <source src="dungeon.mp4" type="video/mp4">
+</video>
+      
+       
+      
+     
+ 
+<!--  <img id="image0" src="http://212.60.62.51:8080/mjpg/video.mjpg" width="640" max-width="640" height="480" class="center" alt="" title="Click here to enter the camera located in Switzerland, region Bern, Biel">-->
+
+      
+      <div class="container">
+          <img id="title" src="mainDone.png" alt="NON/BEING presents VAULT"> 
+         
+      </div>
+           
+ 
+      <div class="info">
+   
+     
+          <p><strong>SATURDAY 01/12/18<br>
+12PM TILL LATE<br>
+101 RUE JEAN-TALON O (MTL) <br>
+PASSCODE: TAROT <br></strong>
+
+++++++++++++++++++++<br>
+            
+            
+   <a href="https://soundcloud.com/nereadelrio">NE/RE/A</a>(NYC)<br>
+[DISTRIKT 1]<br><br>
+
+<a href="https://soundcloud.com/kaz_kandy ">KAZ KANDY</a>(MTL)<br><br>
+
+<a href="https://soundcloud.com/djtercel">DJ TERCEL</a>(MTL)<br>
+            [NON/BEING]<br><br> 
+
+<a href="https://soundcloud.com/d_blavatsky ">D.BLAVATSKY</a>(MTL)<br>
+[NON/BEING // VAULT]<br><br> 
+              
+Live Visuals:<a href="https://vimeo.com/shephase">She.PHASE</a>(MTL)<br><br> 
+              
+Pro femdom energy/Queer kink experience with   
+<a href="https://www.instagram.com/queerforsatan/?hl=en ">Mistress Deadly Alice</a>(MTL)<br>
+++++++++++++++++++++++<br>
+		  Website by:<a href="https://www.instagram.com/self_driving_cowboy/?hl=en">REMOTE ACCESS</a>(MTL/SF)
+		  <br>[NON/BEING]<br><br>
+		  <strong>
+              
+10$ pre-sale@La Rama/15$ Before 2AM/20$ After</strong> <br> 
+
+(403)-837-8255  <br><br>           
+
+              
+          </p>
+      </div>
+      
+      <div class="continue">
+      
+        <strong><p id="clickHere">KEEP CLICKING FOR YOUR LIBERATION</p></strong>
+      
+          </div>
+
+
+  </body>
+</html>
