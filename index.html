@@ -117,6 +117,7 @@
               }
               if (numOfClicks == 0){
                 document.getElementById("mainVideo").play(); 
+		document.getElementById("introImgID").src="meltingRed.png";
                 
                 document.getElementById("introImgID").style.width="0px";
                 document.getElementById("introImgID").style.height="0px" ;
@@ -125,7 +126,12 @@
 		      
 		document.getElementById("introImgID").style.position="relative";
 		document.getElementById("introText").style.position="relative";
-        document.getElementById("introText").style.zIndex="-1";
+       		 document.getElementById("introText").style.zIndex="-1";
+		      
+		     
+		      
+		      
+		      
               }
 		  if (numOfClicks == 1){
 		  if (mainVideo.paused) {
@@ -286,10 +292,10 @@
   right: 0; ">
         <img id="introText" src="introText4.png" alt="" style="" >
       </div>
-<!--       
+      
       <div style="position: absolute; left: 0; top: 0; height: 115%; width: 100%;">
 		 <img id="introImgID" src="blackIntro.jpg" alt="intro img" style="height: 115%; width: 100%;" >
-	</div> -->
+	</div>
       
    
       
